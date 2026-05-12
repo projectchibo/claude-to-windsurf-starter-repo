@@ -7,6 +7,7 @@ model-name: SWE-1.6
 context:
   - docs/architecture.md
 doc-impact: []
+export-impact: []
 ---
 
 ## Description
