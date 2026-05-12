@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\jobf9\\\\git projetineos\\\\claude-to-windsurf\\\\pipeline\\\\skills\")",
+      "Bash(Out-Null)",
+      "Bash(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\jobf9\\\\git projetineos\\\\claude-to-windsurf\\\\.claude\\\\commands\")",
+      "Bash(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\jobf9\\\\git projetineos\\\\claude-to-windsurf\\\\.windsurf\\\\skills\\\\architect\")",
+      "Bash(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\jobf9\\\\git projetineos\\\\claude-to-windsurf\\\\.windsurf\\\\skills\\\\executor\")",
+      "Bash(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\jobf9\\\\git projetineos\\\\claude-to-windsurf\\\\.windsurf\\\\skills\\\\generate-consumer-skill\")",
+      "Bash(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\jobf9\\\\git projetineos\\\\claude-to-windsurf\\\\.windsurf\\\\skills\\\\create-migration\")",
+      "Bash(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\jobf9\\\\git projetineos\\\\claude-to-windsurf\\\\.windsurf\\\\skills\\\\bootstrap\")",
+      "Bash(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\jobf9\\\\git projetineos\\\\claude-to-windsurf\\\\docs\\\\migrations\")",
+      "Bash(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\jobf9\\\\git projetineos\\\\claude-to-windsurf\\\\skills\\\\exports\")",
+      "Bash(Write-Output \"Directories created.\")",
+      "PowerShell($base = \"c:\\\\Users\\\\jobf9\\\\git projetineos\\\\claude-to-windsurf\"; @\\(\"pipeline\\\\skills\", \".claude\\\\commands\", \".windsurf\\\\skills\\\\architect\", \".windsurf\\\\skills\\\\executor\", \".windsurf\\\\skills\\\\generate-consumer-skill\", \".windsurf\\\\skills\\\\create-migration\", \".windsurf\\\\skills\\\\bootstrap\", \"docs\\\\migrations\", \"skills\\\\exports\"\\) | ForEach-Object { New-Item -ItemType Directory -Force \"$base\\\\$_\" | Out-Null }; Write-Output \"Done\")"
+    ]
+  }
+}
