@@ -35,14 +35,20 @@ to:
 status: done
 ```
 
-### 2. Write to sync-queue (if doc-impact is not empty)
+### 2. Write to sync-queue (if doc-impact or export-impact is not empty)
 If the task has a non-empty `doc-impact` field, append each listed file to `docs/sync-queue.md`:
 
 ```markdown
 - `docs/context/auth.md` — updated auth flow (from TASK-003)
 ```
 
-If `doc-impact` is empty, skip this step.
+If the task has a non-empty `export-impact` field, append each listed export skill to `docs/sync-queue.md` with a regenerate note:
+
+```markdown
+- `skills/exports/ui-package.md` — button API changed, needs regeneration (from TASK-007)
+```
+
+If both fields are empty, skip this step.
 
 ### 3. Move the task file
 Move the task file from `tasks/` to `tasks/done/`.
